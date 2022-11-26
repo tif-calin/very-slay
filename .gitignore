@@ -1,0 +1,5 @@
+.DS_Store
+.env
+elm-stuff
+node_modules
+yarn-error.log

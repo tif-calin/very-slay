@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SlaySlay</title>
+  <meta name="description" content="An open-source attempt at implementing a hex-based strategy game in Elm. Inspired by Sean O' Connor's Slay.">
+  <script defer type="module">
+    import { Elm } from './src/Main.elm';
+
+    const root = document.getElementById('elm');
+    const app = Elm.Main.init({ node: root });
+  </script>
+</head>
+<body>
+  <main id="elm"></main>
+</body>
+</html>
