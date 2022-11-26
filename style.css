@@ -1,19 +1,37 @@
 @import url("./styles/common.css");
 
-footer {
+header {
   text-align: center;
+  margin-bottom: 1rem;
+}
+header h1 {
+  margin: 0;
 }
 
+main {
+  display: block;
+  padding: 1rem;
+}
+main > * {
+  aspect-ratio: 1/1;
+  border: 5px double black;
+  border-radius: var(--border-radius);
+  max-width: calc(100vh - 6rem - 3 * var(--site-padding));
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  margin-top: var(--site-padding);
+}
 footer a {
   opacity: 0.3;
   transition: opacity 0.15s;
   text-decoration: none;
 }
-
 footer a:hover {
   opacity: 1;
 }
-
 footer > a::before,
 footer > a::after {
   content: " \2620  ";

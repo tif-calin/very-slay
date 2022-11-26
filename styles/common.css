@@ -7,6 +7,9 @@
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
   --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
   --font-mono: font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
+
+  --border-radius: 0.3rem;
+  --site-padding: calc(1rem + 2vw);
 }
 
 body {
@@ -25,13 +28,17 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  padding: calc(1rem + 2vw);
+  padding: var(--site-padding);
 }
 
+#page > header {
+  flex: 0;
+  line-height: 1;
+}
 #page > main {
   flex: 1;
 }
-
 #page > footer {
   flex: 0;
+  line-height: 1;
 }
