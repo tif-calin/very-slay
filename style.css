@@ -18,6 +18,12 @@ main > * {
   border-radius: var(--border-radius);
   max-width: calc(100vh - 6rem - 3 * var(--site-padding));
   margin: auto;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+main svg polygon {
+  paint-order: stroke;
 }
 
 footer {
